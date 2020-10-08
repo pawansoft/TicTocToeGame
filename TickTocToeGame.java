@@ -7,7 +7,7 @@ public class TickTocToeGame {
 
         for(int i=1;i< board.length;i++)
         {
-            board[i]=' ';
+            board[i]= 0;
         }
         return board;
     }
@@ -33,6 +33,19 @@ public class TickTocToeGame {
         System.out.println("|--|--|--|");
         System.out.println("| " + board[7] + " | " + board[8] + " | " + board[9] + " |");
         System.out.println("-----------------------");
+    }
+    public boolean checkIndex(int index)
+    {
+        boolean check;
+        if (board[index] == 0)
+        {
+            check =true;
+        }
+        else
+        {
+            check=false;
+        }
+        return check;
     }
 }
 
